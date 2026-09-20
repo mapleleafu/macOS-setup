@@ -18,7 +18,7 @@ Option+Up fills the window. Option+Left / Option+Right snap to a half.
 
 Karabiner calls `tile.sh`. That talks to `Tile Window.app` when Accessibility actually attaches, and falls back to `tile-window.js` via osascript.
 
-G HUB G4 Mission Control macro sends Control+Up. Mission Control system shortcuts must stay enabled. Keyboard Control+Option+Up is Mission Control. Keyboard Control+Up does nothing.
+Keyboard Control+Up / Control+Down scroll the editor. Control+Option+Up is Mission Control. G HUB G4 sends Control+Option+Up.
 
 ## Sync
 
