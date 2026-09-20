@@ -573,7 +573,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "vk_none"
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "control"
+                                        ]
                                     }
                                 ],
                                 "type": "basic",
