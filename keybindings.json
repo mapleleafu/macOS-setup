@@ -1,0 +1,310 @@
+[
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack",
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward",
+  },
+  {
+    "key": "ctrl+up",
+    "command": "scrollLineUp",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+down",
+    "command": "scrollLineDown",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "cmd+c",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0003",
+    },
+    "when": "terminalFocus && !terminalTextSelected",
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0012",
+    },
+    "when": "terminalFocus",
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine",
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus",
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus",
+  },
+  {
+    "key": "cmd+`",
+    "command": "workbench.action.terminal.toggleTerminal",
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active",
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.toggleAuxiliaryBar",
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar",
+  },
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility",
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u001b\r",
+    },
+    "when": "terminalFocus",
+  },
+  {
+    "key": "cmd+home",
+    "command": "cursorTop",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "cmd+end",
+    "command": "cursorBottom",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+3",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+cmd+3",
+    "command": "editor.action.removeCommentLine",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+cmd+enter",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "cmd+f2",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-composer.newAgentChat",
+  },
+  {
+    "key": "cmd+l",
+    "command": "-aichat.newchataction",
+    "when": "!isGlass",
+  },
+  {
+    "key": "cmd+l",
+    "command": "-composer.sendToAgent",
+    "when": "editorHasPromptBar && editorPromptBarFocused",
+  },
+  {
+    "key": "cmd+l",
+    "command": "-glass.focusBrowserLocationBar",
+    "when": "isGlassAgentWorkspace && !browserViewFocused && !editorTextFocus && !glassDesignModeInputFocused && glassActiveTabKind == 'browser'",
+  },
+  {
+    "key": "cmd+l",
+    "command": "-glass.focusInput",
+    "when": "glassNoModalOpen && isGlassEmptyWorkspace && glassActiveTabKind != 'browser' && glassActiveTabKind != 'plan'",
+  },
+  {
+    "key": "cmd+l",
+    "command": "-glass.insertSelectionIntoGlassComposer",
+    "when": "isGlassAgentWorkspace && glassActiveTabKind == 'file' || isGlassAgentWorkspace && glassActiveTabKind == 'terminal' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'diff' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'pr'",
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-glass.newAgentWithContext",
+    "when": "isGlassAgentWorkspace && glassActiveTabKind == 'file' || isGlassAgentWorkspace && glassActiveTabKind == 'terminal' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'diff' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'pr'",
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus",
+  },
+  {
+    "key": "cmd+l",
+    "command": "expandLineSelection",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "cmd+p",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "ctrl+cmd+1",
+    "command": "-workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "cmd+r cmd+2",
+    "command": "-editor.foldLevel2",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+2",
+    "command": "editor.foldLevel2"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-glass.goToChat2",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-glass.goToChat2",
+    "when": "isGlassAgentWorkspace && terminalFocusInAny"
+  },
+  {
+    "key": "cmd+3",
+    "command": "-glass.goToChat3",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "cmd+3",
+    "command": "-glass.goToChat3",
+    "when": "isGlassAgentWorkspace && terminalFocusInAny"
+  },
+  {
+    "key": "cmd+r cmd+1",
+    "command": "-editor.foldLevel1",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.action.focusFirstEditorGroup",
+    "when": "!cursor.chatEditorGroup.enabled"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "-workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "cmd+5",
+    "command": "workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "-workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "cmd+6",
+    "command": "workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "cmd+8",
+    "command": "workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "cmd+7",
+    "command": "workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "-workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "cmd+9",
+    "command": "workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "-workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.action.toggleEditorVisibility"
+  },
+  {
+    "key": "alt+cmd+e",
+    "command": "-workbench.action.toggleSidebarPosition"
+  },
+  {
+    "key": "alt+cmd+e",
+    "command": "workbench.action.maximizeChatSize"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-cursor.toggleAgentWindowIDEUnification"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-cursor.toggleAgentWindowIDEUnification"
+  }
+]
+

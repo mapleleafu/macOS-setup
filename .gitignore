@@ -1,0 +1,6 @@
+.DS_Store
+tile-window/tile-send
+tile-window/tile-window-daemon
+*.fifo
+*.sock
+.git/macos-setup-auto-push.lock
