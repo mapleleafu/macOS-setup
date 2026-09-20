@@ -573,7 +573,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "mission_control"
+                                        "key_code": "vk_none"
                                     }
                                 ],
                                 "type": "basic",
